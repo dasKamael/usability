@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    height: 100vh;
+    display: grid;
+}
+
+#header{
+    background-color: #cb3333;
+    height: 10%;
+}
+
+#proflist{
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    height: 90%;
+}
+
+.profImage{
+    background-image: url('https://picsum.photos/200/300?grayscale&blur=2');
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.chooseLecture{
+    background-color: white;
+    height: 0;
+    width: 200px;
+    transition: 0.3s;
+    visibility: hidden;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profImage:hover .chooseLecture{
+    height: 200px;
+    width: 200px;
+    visibility: visible;
+}
+
+.chooseLecture > h2:hover{
+    transform: scale(1.1);
+    transition: 0.1s;
+    cursor: pointer;
+}
