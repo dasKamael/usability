@@ -26,7 +26,7 @@
 
 
 #proflist{
-    margin-top: 16%;
+    margin-top: 10%;
     padding: 15px;
     width: 100%;
     display: flex;
@@ -39,8 +39,8 @@
 .profImage{
     background-image: url('https://picsum.photos/200/300?grayscale&blur=2');
     background-position: center;
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -62,7 +62,7 @@
 .chooseLecture{
     background-color: white;
     height: 0;
-    width: 200px;
+    width: 300px;
     transition: 0.3s;
     visibility: hidden;
     display: grid;
@@ -73,8 +73,8 @@
 }
 
 .profImage:hover .chooseLecture{
-    height: 200px;
-    width: 200px;
+    height: 300px;
+    width: 300px;
     visibility: visible;
 }
 

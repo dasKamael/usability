@@ -36,6 +36,7 @@ body {
     display: grid;
 }
 
+
 input{
     height: 75px;
     width: 375px;
@@ -58,4 +59,7 @@ input{
     width: 100px;
     margin-left: 10px;
     font-size: 24px;
+}
+#loginButton:hover{
+    cursor: pointer;
 }
