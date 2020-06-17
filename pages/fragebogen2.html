@@ -3,18 +3,12 @@
 <html>
 <head>
     <title> Fragebogen </title>
-    <link rel="stylesheet" href="../styles/login.css">
-    <link rel="stylesheet" href="../styles/question.css">
+    <link rel="stylesheet" href="../styles/questions.css">
 
 </head>
 <body>
 
-    <div id="header">
-        <img src="../assets/logo.png" height="100">
-        <a href="../index.html"><h2 id="logOut">Logout</h2></a>
-    </div>
-
-
+    <img style="position:fixed; top = 0px;" src="../assets/hsrm_logo.png" width="350" height="100" alt="Bild wurde nicht gefunden" />
     <h1 style="position:fixed; left:1450px; top:110px">Teil 2: Die Vorlesung</h1>
     <em style="position:fixed; left:350px; top:180px">Bewerten sie folgende Aussagen anhand der Slider:</em>
 
@@ -29,7 +23,7 @@
     <div class="question_one">
         <br />
         1. Die Vorlesungsfolien bauten immer aufeinander auf:<br /><br />
-        <div id="balken">- <input type="range" min="1" max="6" value="3" id="question_one"> + </div>
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_one"> + </div>
         <br /><br /><div id="wertung"> Deine Wertung: <strong><span id="answer"></span></strong></div>
         <script>
             var slider = document.getElementById("question_one");
@@ -62,7 +56,7 @@
     <div class="question_two">
         <br />
         2. Ich habe in den Vorlesungen sehr viel lernen können:<br /><br />
-        <div id="balken">- <input type="range" min="1" max="6" value="3" id="question_two"> +</div>
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_two"> +</div>
         <br /><br /> <div id="wertung"> Deine Wertung: <strong><span id="answer2"></span></strong></div>
         <script>
             var slider = document.getElementById("question_two");
@@ -94,7 +88,7 @@
     <div class="question_three">
         <br />
         3. Die Vorlesung war sehr hilfreich zum bestehen der Praktika:<br /><br />
-        <div id="balken">- <input type="range" min="1" max="6" value="3" id="question_three"> +</div>
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_three"> +</div>
         <br /><br /><div id="wertung">Deine Wertung: <strong><span id="answer3"></span></strong></div>
         <script>
             var slider = document.getElementById("question_three");
@@ -127,7 +121,7 @@
     <div class="question_four">
         <br />
         4. Den Besuch der Vorlesung würde ich weiterempfehlen:<br /><br />
-        <div id="balken">- <input type="range" min="1" max="6" value="3" id="question_four"> +</div>
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_four"> +</div>
         <br /><br /><div id="wertung">Deine Wertung: <strong><span id="answer4"></span></strong></div>
         <script>
             var slider = document.getElementById("question_four");

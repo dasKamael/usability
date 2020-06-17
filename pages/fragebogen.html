@@ -3,19 +3,14 @@
 <html>
 <head>
     <title> Fragebogen </title>
-    <link rel="stylesheet" href="../styles/login.css">
-    <link rel="stylesheet" href="../styles/question.css">
+    <link rel="stylesheet" href="../styles/questions.css">
 
 </head>
 <body>
 
-    <div id="header">
-        <img src="../assets/logo.png" height="100">
-        <a href="../index.html"><h2 id="logOut">Logout</h2></a>
-    </div>
+    <img style="position:fixed; top = 0px;" src="../assets/hsrm_logo.png" width="350" height="100" alt="Bild wurde nicht gefunden" />
 
-
-    <h1 style="position:fixed; left:1450px; top:110px">Teil 2: Die Vorlesung</h1>
+    <h1 style="position:fixed; left:1450px; top:110px">Teil 1: Der Lehrbeauftrage</h1>
     <em style="position:fixed; left:350px; top:180px">Bewerten sie folgende Aussagen anhand der Slider:</em>
 
     <br /><br /><br /><br /><br /><br /><br /><br /><br />
@@ -28,8 +23,8 @@
 
     <div class="question_one">
         <br />
-        1. Die Vorlesungsfolien bauten immer aufeinander auf:<br /><br />
-        <div id="balken">- <input type="range" min="1" max="6" value="3" id="question_one"> + </div>
+        1. Der Lehrbeauftragte kommt pünktlich zur Vorlesung:<br /><br />
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_one"> + </div>
         <br /><br /><div id="wertung"> Deine Wertung: <strong><span id="answer"></span></strong></div>
         <script>
             var slider = document.getElementById("question_one");
@@ -61,8 +56,8 @@
 
     <div class="question_two">
         <br />
-        2. Ich habe in den Vorlesungen sehr viel lernen können:<br /><br />
-        <div id="balken">- <input type="range" min="1" max="6" value="3" id="question_two"> +</div>
+        2. Der Lehrbeauftragte ist höflich und freundlich zu Studierenden:<br /><br />
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_two"> +</div>
         <br /><br /> <div id="wertung"> Deine Wertung: <strong><span id="answer2"></span></strong></div>
         <script>
             var slider = document.getElementById("question_two");
@@ -91,10 +86,11 @@
 
         </script><br /><br />
     </div>
+
     <div class="question_three">
         <br />
-        3. Die Vorlesung war sehr hilfreich zum bestehen der Praktika:<br /><br />
-        <div id="balken">- <input type="range" min="1" max="6" value="3" id="question_three"> +</div>
+        3. Der Lehrbeauftragte stellt sich für Fragen zur Verfügung:<br /><br />
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_three"> +</div>
         <br /><br /><div id="wertung">Deine Wertung: <strong><span id="answer3"></span></strong></div>
         <script>
             var slider = document.getElementById("question_three");
@@ -126,8 +122,8 @@
 
     <div class="question_four">
         <br />
-        4. Den Besuch der Vorlesung würde ich weiterempfehlen:<br /><br />
-        <div id="balken">- <input type="range" min="1" max="6" value="3" id="question_four"> +</div>
+        4. Der Lehrbeauftragte erklärt den nutzen des Lehrinhalts in der Wirtschaft:<br /><br />
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_four"> +</div>
         <br /><br /><div id="wertung">Deine Wertung: <strong><span id="answer4"></span></strong></div>
         <script>
             var slider = document.getElementById("question_four");
@@ -157,7 +153,41 @@
         </script>
         <br /><br />
     </div>
+    <div class="question_five">
+        <br />
+        5. Der Lehrbeauftragte kennt sich in seinem Fach gut aus:<br /><br />
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_five"> + </div>
+        <br /><br /><div id="wertung"> Deine Wertung: <strong><span id="answer5"></span></strong></div>
+        <script>
+            var slider = document.getElementById("question_five");
+            var output5 = document.getElementById("answer5");
+            output5.innerHRML = slider.value;
+            slider.oninput = function () {
+                if (this.value == 1) {
+                    output5.innerHTML = "Trifft überhaupt nicht zu";
+                }
+                if (this.value == 2) {
+                    output5.innerHTML = "Trifft nicht zu";
+                }
+                if (this.value == 3) {
+                    output5.innerHTML = "Trifft eher nicht zu";
+                }
+                if (this.value == 4) {
+                    output5.innerHTML = "Trifft eher zu";
+                }
+                if (this.value == 5) {
+                    output5.innerHTML = "Trifft zu";
+                }
+                if (this.value == 6) {
+                    output5.innerHTML = "Trifft sehr zu";
+                }
+            }
 
+        </script><br /><br />
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />s
+    <br /><br /><br /><br /><br /><br /><br />
     <img class="next_page"
          src="../assets/weiter.png"
          width="150"
@@ -182,7 +212,7 @@
     <map name="next_page_link">
         <area shape="rect"
               coords="0,0,150,100"
-              href="../pages/fragebogen3.html"
+              href="../pages/fragebogen2.html"
               alt="link nicht gefunden" />
     </map>
 
