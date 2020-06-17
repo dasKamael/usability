@@ -1,7 +1,8 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 500;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
 }
 
 #header > a:link, a:visited{
@@ -26,19 +27,21 @@
 
 
 #proflist{
-    margin-top: 10%;
-    padding: 15px;
-    width: 100%;
+    margin-top: 0%;
+    padding: 50px;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: space-evenly;
+    align-content: center;
     height: 90%;
+    margin: auto;
 }
 
 .profImage{
-    background-image: url('https://picsum.photos/200/300?grayscale&blur=2');
+    background-image: url('https://picsum.photos/200/300?grayscale&blur=0');
     background-position: center;
+    background-color: white;
     height: 300px;
     width: 300px;
     display: grid;
@@ -46,6 +49,8 @@
     align-items: center;
     text-align: center;
     border-radius: 5px;
+    border: 2px solid #cb3333;
+    margin: 50px;
 }
 
 .profImage > h1{
@@ -57,30 +62,39 @@
     margin-top: 0px;
     color: white;
     background: #cb3333;
+    text-shadow: 0 0 0;
 }
 
 .chooseLecture{
     background-color: white;
-    height: 0;
+    height: 0px;
     width: 300px;
-    transition: 0.3s;
+    transition: 0.5s;
     visibility: hidden;
     display: grid;
     align-items: center;
     text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 5px #adadad;
     overflow: hidden;
+    font-size: 20px;
 }
 
 .profImage:hover .chooseLecture{
-    height: 300px;
+    height: 260px;
     width: 300px;
     visibility: visible;
 }
 
 .chooseLecture > h2:hover{
     transform: scale(1.1);
-    transition: 0.1s;
+    transition: 0.3s;
     cursor: pointer;
 }
+
+.chooseLecture > h2:not(:hover){
+  opacity: 0.5;
+    cursor: pointer;
+}
+
+
 

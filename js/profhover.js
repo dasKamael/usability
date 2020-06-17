@@ -1,12 +1,13 @@
 let lectureList = [
-    'Usability',
+    'Usability Engineering',
     'Algorithmen und Datenstrukturen',
-    'Usability',
-    'ADS',
-    'AFS',
-    'ADS',
-    'AFS',
-    'ADS',
+    'Datenbanken',
+    'Rechnernetz- werke und Tele- kommunikation',
+    'Objektorientierte Software- entwicklung',
+    'Lineare Algebra',
+    'Analysis und Numerik',
+    'Einführung in die Informatik',
+    'IT-Recht und Datenschutz'
 ]
 
 for(i=0;i<lectureList.length;i++){
@@ -26,8 +27,8 @@ function createChooseLecture(lecture){
         chooseLecture.classList.add('chooseLecture');
     
     let lecture1 = document.createElement('h2');
-        lecture1.innerText = 'Vorlesung';
-    
+        lecture1.innerText = 'Vorlesung'; 
+        
     let lecture2 = document.createElement('h2');
         lecture2.innerText = 'Übung';
 
@@ -39,3 +40,4 @@ function createChooseLecture(lecture){
 
     document.getElementById('proflist').appendChild(wrap);
 }
+

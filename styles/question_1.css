@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 500;
+    font-family: Trebuchet MS, Helvetica, sans-serif;
+}
+
+#header > a:link, a:visited{
+   text-decoration: none;
+   color: white;
+   padding: 12px;
+}
+
+#main{
+  padding: 30px;
+}
+
+#header{
+    background-color: #cb3333;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+#wertung{
+    position:absolute;
+    left: 50px;
+}
+
+h1 {
+   padding: 10px;
+}
+
+
+#Info {
+   padding: 10px;
+}
+
+
+.question_one {
+    background-color: lightgrey;
+    border-radius: 5px;
+    position: absolute;
+    top: 230px;
+    left: 800px;
+    height: 150px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.question_one span{
+   position: absolute;
+   bottom: 0;
+   left: 10;
+   
+}
+
+.question_two {
+    background-color: lightgrey;
+    border-radius: 5px;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+}
+
+.question_three {
+    background-color: lightgrey;
+    border-radius: 5px;
+    position: absolute;
+    top: 570px;
+    left: 800px;
+}
+.question_four {
+    background-color: lightgrey;
+    border-radius: 5px;
+    position: absolute;
+    top: 740px;
+    left: 800px;
+}
+
+.question_five {
+    background-color: lightgrey;
+    border-radius: 5px;
+    position: absolute;
+    top: 910px;
+    left: 800px;
+}
+
+.next_page {
+    position: fixed;
+    bottom: 8px;
+    right: 16px;
+}
+
+.previous:hover{
+  background-color: #ddd;
+  color: black;
+  box-shadow: inset 0 0 5px;
+  transition: 0.2s;
+}
+
+.next:hover{
+  background-color: #ddd;
+  color: black;
+  box-shadow: inset 0 0 5px;
+  transition: 0.2s;
+}
+
+.previous {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: silver;
+  color: black;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px;
+}
+
+.next {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #cb3333;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+}
+
+.professor {
+}
+.slide {
+    -webkit-appearance: none;
+    width: 75%;
+    height: 5px;
+    border-radius: 1px;
+    outline: none;
+}
+.slide::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #cb3333;
+    cursor: pointer;
+}

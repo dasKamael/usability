@@ -1,0 +1,170 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Fragebogen </title>
+    <link rel="stylesheet" href="../styles/question_1.css">
+
+</head>
+<body>
+  
+  <div id="header">
+    <img src="../assets/logo.png" height="100">
+    <a href="../index.html"><h2 id="logOut">Logout</h2></a>
+
+        </div>
+
+    <h1>Teil 2: Die Vorlesung</h1>
+    <div id="Info">Bewerten sie folgende Aussagen anhand der Slider:</div>
+    
+    <div id="main">
+    <div class="professor">
+        <strong>Professor Sanchez</strong>
+        <br /> <strong>Fach: </strong><em>Stringtheorie</em><br /><br /><br />
+        <img src="../assets/rick.png" width="300" height="400" alt="Bild wurde nicht gefunden" />
+    </div>
+    
+    
+    <div class="question_one">
+        1. Die Vorlesungsfolien bauten immer aufeinander auf:
+        <div id="balken">- <input class ="slide" type="range" min="1" max="6" value="3" id="question_one"> + </div>
+        <span>
+        <div id="wertung"> Deine Wertung: <strong><span id="answer"></span></strong></div>
+        <script>
+            var slider = document.getElementById("question_one");
+            var output0 = document.getElementById("answer");
+            output0.innerHRML = slider.value;
+            slider.oninput = function () {
+                if (this.value == 1) {
+                    output0.innerHTML = "Trifft �berhaupt nicht zu";
+                }
+                if (this.value == 2) {
+                    output0.innerHTML = "Trifft nicht zu";
+                }
+                if (this.value == 3) {
+                    output0.innerHTML = "Trifft eher nicht zu";
+                }
+                if (this.value == 4) {
+                    output0.innerHTML = "Trifft eher zu";
+                }
+                if (this.value == 5) {
+                    output0.innerHTML = "Trifft zu";
+                }
+                if (this.value == 6) {
+                    output0.innerHTML = "Trifft sehr zu";
+                }
+            }
+
+        </script><br /><br />
+      </span>
+    </div>
+
+
+
+
+    <div class="question_two">
+        <br />
+        2. Ich habe in den Vorlesungen sehr viel lernen können:<br /><br />
+        <div id="balken">- <input class ="slide" type="range" min="1" max="6" value="3" id="question_two"> +</div>
+        <br /><br /> <div id="wertung"> Deine Wertung: <strong><span id="answer2"></span></strong></div>
+        <script>
+            var slider = document.getElementById("question_two");
+            var output = document.getElementById("answer2");
+            output.innerHRML = slider.value;
+            slider.oninput = function () {
+                if (this.value == 1) {
+                    output.innerHTML = "Trifft überhaupt nicht zu";
+                }
+                if (this.value == 2) {
+                    output.innerHTML = "Trifft nicht zu";
+                }
+                if (this.value == 3) {
+                    output.innerHTML = "Trifft eher nicht zu";
+                }
+                if (this.value == 4) {
+                    output.innerHTML = "Trifft eher zu";
+                }
+                if (this.value == 5) {
+                    output.innerHTML = "Trifft zu";
+                }
+                if (this.value == 6) {
+                    output.innerHTML = "Trifft sehr zu";
+                }
+            }
+
+        </script><br /><br />
+    </div>
+
+    <div class="question_three">
+        <br />
+        3. Die Vorlesung war sehr hilfreich zum bestehen der Praktika:<br /><br />
+        <div id="balken">- <input class ="slide" type="range" min="1" max="6" value="3" id="question_three"> +</div>
+        <br /><br /><div id="wertung">Deine Wertung: <strong><span id="answer3"></span></strong></div>
+        <script>
+            var slider = document.getElementById("question_three");
+            var output2 = document.getElementById("answer3");
+            output2.innerHRML = slider.value;
+            slider.oninput = function () {
+                if (this.value == 1) {
+                    output2.innerHTML = "Trifft �berhaupt nicht zu";
+                }
+                if (this.value == 2) {
+                    output2.innerHTML = "Trifft nicht zu";
+                }
+                if (this.value == 3) {
+                    output2.innerHTML = "Trifft eher nicht zu";
+                }
+                if (this.value == 4) {
+                    output2.innerHTML = "Trifft eher zu";
+                }
+                if (this.value == 5) {
+                    output2.innerHTML = "Trifft zu";
+                }
+                if (this.value == 6) {
+                    output2.innerHTML = "Trifft sehr zu";
+                }
+            }
+
+        </script><br /><br />
+    </div>
+
+    <div class="question_four">
+        <br />
+        4. Den Besuch der Vorlesung würde ich weiterempfehlen:<br /><br />
+        <div id="balken">- <input class ="slide" type="range" min="1" max="6" value="3" id="question_four"> +</div>
+        <br /><br /><div id="wertung">Deine Wertung: <strong><span id="answer4"></span></strong></div>
+        <script>
+            var slider = document.getElementById("question_four");
+            var output4 = document.getElementById("answer4");
+            output4.innerHRML = slider.value;
+            slider.oninput = function () {
+                if (this.value == 1) {
+                    output4.innerHTML = "Trifft �berhaupt nicht zu";
+                }
+                if (this.value == 2) {
+                    output4.innerHTML = "Trifft nicht zu";
+                }
+                if (this.value == 3) {
+                    output4.innerHTML = "Trifft eher nicht zu";
+                }
+                if (this.value == 4) {
+                    output4.innerHTML = "Trifft eher zu";
+                }
+                if (this.value == 5) {
+                    output4.innerHTML = "Trifft zu";
+                }
+                if (this.value == 6) {
+                    output4.innerHTML = "Trifft sehr zu";
+                }
+            }
+
+        </script>
+        <br /><br />
+    </div>
+    
+    <a href="fragebogen3.html" class="next">Weiter &raquo;</a>
+    <a href="fragebogen.html" class="previous">&laquo; Zurück</a>
+    
+</div>
+</body>
+</html>
