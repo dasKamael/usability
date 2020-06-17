@@ -4,9 +4,10 @@ let lectureList = [
     'Datenbanken',
     'Rechnernetz- werke und Tele- kommunikation',
     'Objektorientierte Software- entwicklung',
-    'ADS',
-    'AFS',
-    'ADS',
+    'Lineare Algebra',
+    'Analysis und Numerik',
+    'Einführung in die Informatik',
+    'IT-Recht und Datenschutz'
 ]
 
 for(i=0;i<lectureList.length;i++){
