@@ -12,37 +12,47 @@ em {
 }
 
 .question_one {
+    width: 500px;
     background-color: lightgrey;
     border-radius: 5px;
+    padding: 1em;
     position: absolute;
     top: 230px;
     left: 800px;
 }
 
 .question_two {
+    width: 500px;
     background-color: lightgrey;
     border-radius: 5px;
+    padding: 1em;
     position: absolute;
     top: 400px;
     left: 800px;
 }
 
 .question_three {
+    width: 500px;
     background-color: lightgrey;
     border-radius: 5px;
+    padding: 1em;
     position: absolute;
     top: 570px;
     left: 800px;
 }
 .question_four {
+    width: 500px;
     background-color: lightgrey;
     border-radius: 5px;
+    padding: 1em;
     position: absolute;
     top: 740px;
     left: 800px;
 }
 
 .question_five {
+    width: 500px;
+    padding: 1em;
     background-color: lightgrey;
     border-radius: 5px;
     position: absolute;
