@@ -4,10 +4,6 @@ let lectureList = [
     'Datenbanken',
     'Rechnernetz- werke und Tele- kommunikation',
     'Objektorientierte Software- entwicklung',
-    'Lineare Algebra',
-    'Analysis und Numerik',
-    'Einführung in die Informatik',
-    'IT-Recht und Datenschutz'
 ]
 
 for(i=0;i<lectureList.length;i++){
@@ -32,10 +28,19 @@ function createChooseLecture(lecture){
     let lecture2 = document.createElement('h2');
         lecture2.innerText = 'Übung';
 
+    let lectureLink1 = document.createElement('a');
+        lectureLink1.setAttribute("href", "../pages/fragebogen.html");
+
+
+    let lectureLink2 = document.createElement('a');
+        lectureLink2.setAttribute("href", "../pages/fragebogen.html");
+
     wrap.appendChild(header);
     wrap.appendChild(chooseLecture);
-    chooseLecture.appendChild(lecture1);
-    chooseLecture.appendChild(lecture2);
+    lectureLink1.appendChild(lecture1);
+    lectureLink2.appendChild(lecture2);
+    chooseLecture.appendChild(lectureLink1);
+    chooseLecture.appendChild(lectureLink2);
     
 
     document.getElementById('proflist').appendChild(wrap);
