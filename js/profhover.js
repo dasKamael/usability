@@ -4,7 +4,7 @@ let lectureList = [
     'Usability',
     'ADS',
     'AFS',
-    'ADS',
+    'Algorithmen und Datenstrukturen',
     'AFS',
     'ADS',
 ]
