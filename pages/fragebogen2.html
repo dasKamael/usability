@@ -151,6 +151,38 @@
         </script>
         <br /><br />
     </div>
+    <div class="question_five">
+        <br />
+        5. Ich habe die Vorlesungen häufig besucht:<br /><br />
+        <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_five"> + </div>
+        <br /><br /><div id="wertung"> Deine Wertung: <strong ><span id="answer5"></span></strong></div>
+        <script>
+            var slider = document.getElementById("question_five");
+            var output5 = document.getElementById("answer5");
+            output5.innerHRML = slider.value;
+            slider.oninput = function () {
+                if (this.value == 1) {
+                    output5.innerHTML = "Trifft überhaupt nicht zu";
+                }
+                if (this.value == 2) {
+                    output5.innerHTML = "Trifft nicht zu";
+                }
+                if (this.value == 3) {
+                    output5.innerHTML = "Trifft eher nicht zu";
+                }
+                if (this.value == 4) {
+                    output5.innerHTML = "Trifft eher zu";
+                }
+                if (this.value == 5) {
+                    output5.innerHTML = "Trifft zu";
+                }
+                if (this.value == 6) {
+                    output5.innerHTML = "Trifft sehr zu";
+                }
+            }
+
+        </script><br /><br />
+    </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />s
 
     <img class="next_page"
          src="../assets/weiter.png"
