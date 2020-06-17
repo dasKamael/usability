@@ -49,7 +49,7 @@
     align-items: center;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 10px 15px 1px #ffdddd, 0px 10px 20px #fecccc;
+    border: 2px solid #cb3333;
     margin: 50px;
 }
 
@@ -74,7 +74,7 @@
     display: grid;
     align-items: center;
     text-align: center;
-    box-shadow: 0 10px 5px #fecccc;
+    box-shadow: 0 10px 5px #adadad;
     overflow: hidden;
     font-size: 20px;
 }
