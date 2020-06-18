@@ -4,18 +4,90 @@
     <title>
         Zusammenfassung
     </title>
-    <link rel="stylesheet" href="../styles/question_1.css">
+    <link rel="stylesheet" href="../styles/questions.css">
 
 </head>
-    <body>
-      <div id="header">
-        <img src="../assets/logo.png" height="100">
-            </div>
-        <h1>Teil 4: Zusammenfassung</h1>
-        <h2>ÃœberprÃ¼fen sie ihre Bewertungen:</h2>
-        <a href="zusammenfassung.html" class="next">Absenden &raquo;</a>
-        <a href="fragebogen3.html" class="previous"> &laquo; ZurÃ¼ck </a>
+<body>
+    <img style="position:fixed; top = 0px;" src="../assets/hsrm_logo.png" width="350" height="100" alt="Bild wurde nicht gefunden" />
+    <h1 style="position:fixed; left:1450px; top:110px">Teil 4: Zusammenfassung</h1>
+    <em style="position:fixed; left:350px; top:180px">Überprüfen sie ihre Bewertungen:</em>
+    <div id="liste1">
+        <h1>Teil 1: Der Lehrbeauftragte</h1>
+        <table>
+            <tr>
+                <td><a href="fragebogen.html">1. Der Lehrbeauftragte kommt pünktlich zur Vorlesung</a></td>
+                <td><strong>Trifft zu</strong></td>
+            </tr>
+            <tr>
+                <td><a href="fragebogen.html">2. Der Lehrbeauftragte ist höflich und freundlich zu Studierenden</a></td>
+                <td><strong>Trifft eher zu</strong></td>
+            </tr>
+            <tr>
+                <td><a href="fragebogen.html">3. Der Lehrbeauftragte stellt sich für Fragen zur Verfügung</a></td>
+                <td><strong>Trifft zu</strong></td>
+            </tr>
+            <tr>
+                <td><a href="fragebogen.html">4. Der Lehrbeauftragte erklärt den nutzen des Lehrinhalts in der Wirtschaft</a></td>
+                <td><strong>Trifft eher nicht zu</strong></td>
+            </tr>
+            <tr>
+                <td><a href="fragebogen.html">5. Der Lehrbeauftragte kennt sich in seinem Fach gut aus</a></td>
+                <td><strong>Trifft zu</strong></td>
+            </tr>
 
+        </table>
+    </div>
+    <div id="liste2">
+        <h1>Teil 2: Die Vorlesung</h1>
+        <table>
+            <tr>
+                <td><a href="../pages/fragebogen2.html">1. Die Vorlesungsfolien bauten immer aufeinander auf</a></td>
+                <td><strong>Trifft nicht zu</strong></td>
+            </tr>
+            <tr>
+                <td><a href="../pages/fragebogen2.html">2. Ich habe in den Vorlesungen sehr viel lernen können</a></td>
+                <td><strong>Trifft zu</strong></td>
+            </tr>
+            <tr>
+                <td><a href="../pages/fragebogen2.html">3. Die Vorlesung war sehr hilfreich zum bestehen der Praktika</a></td>
+                <td><strong>Trifft zu</strong></td>
+            </tr>
+            <tr>
+                <td><a href="../pages/fragebogen2.html">4. Den Besuch der Vorlesung würde ich weiterempfehlen</a></td>
+                <td><strong>Trifft eher zu</strong></td>
+            </tr>
+            <tr>
+                <td><a href="../pages/fragebogen2.html">5. Ich habe die Vorlesungen häufig besucht</a></td>
+                <td><strong>Trifft zu</strong></td>
+            </tr>
 
-    </body>
+        </table>
+    </div>
+    <img class="next_page"
+         src="../assets/senden.png"
+         width="150"
+         height="105"
+         usemap="#next_page_link"
+         alt="Bild wurde nicht gefunden" />
+    <map name="next_page_link">
+        <area shape="rect"
+              coords="0,0,150,100"
+              href="bestätigung.html"
+              alt="link nicht gefunden" />
+    </map>
+
+    <img class="last_page"
+         src="../assets/zurück.png"
+         width="150"
+         height="105"
+         usemap="#last_page_link"
+         alt="Bild wurde nicht gefunden" />
+    <map name="last_page_link">
+        <area shape="rect"
+              coords="0,0,150,100"
+              href="../pages/fragebogen3.html"
+              alt="link nicht gefunden" />
+    </map>
+
+</body>
 </html>

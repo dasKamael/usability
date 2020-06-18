@@ -3,17 +3,16 @@
 <html>
 <head>
     <title> Fragebogen </title>
-    <link rel="stylesheet" href="../styles/question_1.css">
+    <link rel="stylesheet" href="../styles/questions.css">
 
 </head>
 <body>
-  <div id="header">
-    <img src="../assets/logo.png" height="100">
-    <a href="../index.html"><h2 id="logOut">Logout</h2></a>
 
-        </div>
+    <img style="position:fixed; top = 0px;" src="../assets/hsrm_logo.png" width="350" height="100" alt="Bild wurde nicht gefunden" />
 
-    <h1 >Teil 3: Eigene Kritik</h1>
+    <h1 style="position:fixed; left:1450px; top:110px">Teil 3: Eigene Kritik</h1>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br />
 
     <div class="professor">
         <strong>Professor Sanchez</strong>
@@ -22,12 +21,50 @@
     </div>
 
     <div style="position:absolute; top:400px; left:800px;">
-        Hier kÃ¶nnen sie persÃ¶nliche Kritik verfassen:<br /><br />
-        <textarea name="a" rows="12" cols="50"></textarea>
+        Hier können sie persönliche Kritik verfassen:<br /><br />
+        <textarea name="a" rows="12" cols="50">Hier rein schreiben...</textarea>
     </div>
-    <a href="zusammenfassung.html" class="next">Weiter &raquo;</a>
-    <a href="fragebogen2.html" class="previous">&laquo; ZurÃ¼ck </a>
+    <img class="next_page"
+         src="../assets/weiter.png"
+         width="150"
+         height="105"
+         usemap="#next_page_link"
+         alt="Bild wurde nicht gefunden" />
 
+    <!--<script>
+        function myFunction() {
+            var answer1 = document.getElementById("question_one");
+            var answer2 = document.getElementById("question_two");
+            var answer3 = document.getElementById("question_three");
+            var answer4 = document.getElementById("question_four");
+
+            if (answer1.value == 0 || answer2.value == 0 || answer3.value == 0 || answer4.value == 0) {
+
+            }
+
+        }
+    </script>
+        -->
+    <map name="next_page_link">
+        <area shape="rect"
+              coords="0,0,150,100"
+              href="../pages/zusammenfassung.html"
+              alt="link nicht gefunden" />
+    </map>
+
+
+    <img class="last_page"
+         src="../assets/zurück.png"
+         width="150"
+         height="105"
+         usemap="#last_page_link"
+         alt="Bild wurde nicht gefunden" />
+    <map name="last_page_link">
+        <area shape="rect"
+              coords="0,0,150,100"
+              href="../pages/fragebogen2.html"
+              alt="link nicht gefunden" />
+    </map>
 
 </body>
 </html>
