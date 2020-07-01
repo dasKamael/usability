@@ -103,5 +103,9 @@
     cursor: pointer;
 }
 
+.alreadyDone{
+    border: 5px solid green;
+}
+
 
 
