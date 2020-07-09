@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
     <title> Fragebogen </title>
     <link rel="stylesheet" href="../styles/questions.css">
+    <meta charset="utf-8">
 
 </head>
 <body>
@@ -17,22 +18,36 @@
 
     <div class="professor">
         <strong>Professor Sanchez</strong>
-        <br /> <strong>Fach: </strong><em>Stringtheorie</em><br /><br /><br />
+        <br /> <strong>Fach: </strong><em id="fach">Stringtheorie</em><br /><br /><br />
         <img src="../assets/rick.png" width="300" height="400" alt="Bild wurde nicht gefunden" />
     </div>
 
     <div class="question_one">
         <br />
-        1. Der Lehrbeauftragte kommt pünktlich zur Vorlesung:<br /><br />
+        1. Der Lehrbeauftragte kommt pÃ¼nktlich zur Vorlesung:<br /><br />
         <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_one"> + </div>
         <br /><br /><div id="wertung"> Deine Wertung: <strong><span id="answer"></span></strong></div>
         <script>
+            // In jedem dokument ins obere script 1x
+            document.getElementById("fach").innerHTML = localStorage.getItem("current");
+
             var slider = document.getElementById("question_one");
             var output0 = document.getElementById("answer");
-            output0.innerHRML = slider.value;
-            slider.oninput = function () {
+            output0.innerHTML = slider.value;
+            
+
+            // Start
+            var questionsOne;
+            if(localStorage.getItem("questionsOne") != null){
+                questionsOne = localStorage.getItem("questionsOne").split(",");
+                setQuestion(questionsOne[0]);
+            } else {
+                [5];
+            }
+                   
+            slider.oninput = function() {
                 if (this.value == 1) {
-                    output0.innerHTML = "Trifft überhaupt nicht zu";
+                    output0.innerHTML = "Trifft ï¿½berhaupt nicht zu";
                 }
                 if (this.value == 2) {
                     output0.innerHTML = "Trifft nicht zu";
@@ -49,23 +64,57 @@
                 if (this.value == 6) {
                     output0.innerHTML = "Trifft sehr zu";
                 }
+                
+                questionsOne[0] = this.value;
+                localStorage.setItem("questionsOne", questionsOne);
+                console.log(questionsOne);
             }
+
+            function setQuestion(e) {
+                if (e == 1) {
+                    output0.innerHTML = "Trifft ï¿½berhaupt nicht zu";
+                    slider.value = 1;
+                }
+                if (e == 2) {
+                    output0.innerHTML = "Trifft nicht zu";
+                    slider.value = 2;
+                }
+                if (e == 3) {
+                    output0.innerHTML = "Trifft eher nicht zu";
+                    slider.value = 3;
+                }
+                if (e == 4) {
+                    output0.innerHTML = "Trifft eher zu";
+                    slider.value = 4;
+                }
+                if (e == 5) {
+                    output0.innerHTML = "Trifft zu";
+                    slider.value = 5;
+                }
+                if (e == 6) {
+                    output0.innerHTML = "Trifft sehr zu";
+                    slider.value = 6;
+                }
+            }
+            // Ende
 
         </script><br /><br />
     </div>
 
     <div class="question_two">
         <br />
-        2. Der Lehrbeauftragte ist höflich und freundlich zu Studierenden:<br /><br />
+        2. Der Lehrbeauftragte ist hï¿½flich und freundlich zu Studierenden:<br /><br />
         <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_two"> +</div>
         <br /><br /> <div id="wertung"> Deine Wertung: <strong><span id="answer2"></span></strong></div>
         <script>
             var slider = document.getElementById("question_two");
             var output = document.getElementById("answer2");
             output.innerHRML = slider.value;
+
+           
             slider.oninput = function () {
                 if (this.value == 1) {
-                    output.innerHTML = "Trifft überhaupt nicht zu";
+                    output.innerHTML = "Trifft ï¿½berhaupt nicht zu";
                 }
                 if (this.value == 2) {
                     output.innerHTML = "Trifft nicht zu";
@@ -82,6 +131,12 @@
                 if (this.value == 6) {
                     output.innerHTML = "Trifft sehr zu";
                 }
+
+                questionsOne[1] = this.value;
+                localStorage.setItem("questionsOne", questionsOne);
+                console.log(questionsOne);
+
+
             }
 
         </script><br /><br />
@@ -89,7 +144,7 @@
 
     <div class="question_three">
         <br />
-        3. Der Lehrbeauftragte stellt sich für Fragen zur Verfügung:<br /><br />
+        3. Der Lehrbeauftragte stellt sich fï¿½r Fragen zur Verfï¿½gung:<br /><br />
         <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_three"> +</div>
         <br /><br /><div id="wertung">Deine Wertung: <strong><span id="answer3"></span></strong></div>
         <script>
@@ -98,7 +153,7 @@
             output2.innerHRML = slider.value;
             slider.oninput = function () {
                 if (this.value == 1) {
-                    output2.innerHTML = "Trifft überhaupt nicht zu";
+                    output2.innerHTML = "Trifft ï¿½berhaupt nicht zu";
                 }
                 if (this.value == 2) {
                     output2.innerHTML = "Trifft nicht zu";
@@ -122,7 +177,7 @@
 
     <div class="question_four">
         <br />
-        4. Der Lehrbeauftragte erklärt den nutzen des Lehrinhalts in der Wirtschaft:<br /><br />
+        4. Der Lehrbeauftragte erklï¿½rt den nutzen des Lehrinhalts in der Wirtschaft:<br /><br />
         <div id="balken">- <input class="slide" type="range" min="1" max="6" value="3" id="question_four"> +</div>
         <br /><br /><div id="wertung">Deine Wertung: <strong><span id="answer4"></span></strong></div>
         <script>
@@ -131,7 +186,7 @@
             output4.innerHRML = slider.value;
             slider.oninput = function () {
                 if (this.value == 1) {
-                    output4.innerHTML = "Trifft überhaupt nicht zu";
+                    output4.innerHTML = "Trifft ï¿½berhaupt nicht zu";
                 }
                 if (this.value == 2) {
                     output4.innerHTML = "Trifft nicht zu";
@@ -164,7 +219,7 @@
             output5.innerHRML = slider.value;
             slider.oninput = function () {
                 if (this.value == 1) {
-                    output5.innerHTML = "Trifft überhaupt nicht zu";
+                    output5.innerHTML = "Trifft ï¿½berhaupt nicht zu";
                 }
                 if (this.value == 2) {
                     output5.innerHTML = "Trifft nicht zu";
