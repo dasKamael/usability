@@ -7,7 +7,7 @@ button.addEventListener('click', function(){
         window.open('pages/results.html',"_self","",true);
         console.log('prof');
     } else{
-        window.open('pages/profhover.html',"_self","",true)
+        window.open('pages/chooseLecture.html',"_self","",true)
         console.log('student');
     }
 });
