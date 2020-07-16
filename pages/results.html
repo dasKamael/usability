@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>results</title>
     <link rel="stylesheet" href="../styles/results.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 </head>
 <body>
     <div id="header">
@@ -13,10 +15,22 @@
     </div>
     
     
-  <h1>Hier sind die Umfrageerbnisse für: Datenbanken (Vorlesung)</h1>  
+  <h1>Hier sind die Umfrageerbnisse für:
     
+<div class="dropdown">
+  <button class="dropbtn">Datenbanken (Vorlesung)</button>
+  <div class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  </div>
+</div>
+  </h1> 
     
-  <table class="graph" style=" margin-left:auto;margin-right:auto;margin-top:10%;">
+    <div id="container">
+      <div class="one">
+      
+  <table class="graph">
     <div id="bargraph">
   <caption>Der Lehrbeauftragte kommt pünktlich zur Vorlesung</caption>
 	<thead>
@@ -47,11 +61,12 @@
 		</tr>
 	</tbody>
 </div>
-  
 </table>
+</div>
 
 
-<table class="graph" style=" margin-left:auto;margin-right:auto;margin-top:10%;">
+<div class="two">
+<table class="graph">
 <caption>Der Lehrbeauftragte ist höflich und freundlich zu Studierenden</caption>
 <div id="bargraph">
 <thead>
@@ -83,8 +98,10 @@
 </tbody>
 </div>
 </table>
+</div>
 
-<table class="graph" style=" margin-left:auto;margin-right:auto;margin-top:10%;">
+<div class="one">
+<table class="graph">
 <caption>Der Lehrbeauftragte stellt sich für Fragen zur Verfügung</caption>
 <div id="bargraph">
 <thead>
@@ -116,6 +133,44 @@
 </tbody>
 </div>
 </table>
+</div>
+
+<div class="two">
+<table class="graph">
+<caption>Der Lehrbeauftragte stellt sich für Fragen zur Verfügung</caption>
+<div id="bargraph">
+<thead>
+  <tr>
+    <th scope="col">Item</th>
+    <th scope="col">Percent</th>
+  </tr>
+</thead><tbody class="horizontal">
+  <tr style="height:3%">
+    <th scope="row">trifft überhaupt nicht zu</th>
+    <td><span>3%</span></td>
+  </tr>
+  <tr style="height:12%">
+    <th scope="row"> </th>
+    <td><span>12%</span></td>
+  </tr>
+  <tr style="height:45%">
+    <th scope="row"></th>
+    <td><span>45%</span></td>
+  </tr>
+  <tr style="height:14%">
+    <th scope="row"> </th>
+    <td><span>14%</span></td>
+  </tr>
+  <tr style="height:22%">
+    <th scope="row">trifft sehr zu</th>
+    <td><span>22%</span></td>
+  </tr>
+</tbody>
+</div>
+</table>
+</div>
+
+</div>
    
 
 </body>
