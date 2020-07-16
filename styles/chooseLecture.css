@@ -39,7 +39,6 @@
 }
 
 .profImage{
-    background-image: url('https://picsum.photos/200/300?grayscale&blur=0');
     background-position: center;
     background-color: white;
     height: 300px;

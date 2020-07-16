@@ -63,7 +63,7 @@ for(let i=0;i<elements.length;i++){
         }
         localStorage.setItem('visited', visited.toString());
         localStorage.setItem('current', item);
-        window.open('../pages/fragebogen.html', '_self');
+        window.open('../pages/fragebogenNeu.html', '_self');
     }, false);
 }
 
