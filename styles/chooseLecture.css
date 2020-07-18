@@ -5,6 +5,10 @@
     font-family: Trebuchet MS, Helvetica, sans-serif;
 }
 
+a:hover{
+    cursor: pointer;
+}
+
 #header #logoutLink{
    text-decoration: none;
    color: white;

@@ -1,12 +1,6 @@
 let slider = document.getElementsByClassName('slider');
-let sliderResult = document.getElementsByClassName('sliderResult');
 let lecture = document.getElementById("lecture").innerHTML = localStorage.getItem('current');
 
-
-Array.from(sliderResult).forEach(function(e){
-    let questionPage = parseInt(document.getElementById('currentQuestionPage').innerText);
-    console.log(typeof(questionPage));
-})
 
 Array.from(slider).forEach(function(e) {
     
@@ -14,20 +8,20 @@ Array.from(slider).forEach(function(e) {
         let value = this.value;  
         switch(value){
             case "1": 
-                this.nextElementSibling.innerHTML = "Trifft überhaupt nicht zu";
+                this.parentNode.parentNode.firstElementChild.innerText = "Trifft überhaupt nicht zu";
                 console.log(Array.from(slider).indexOf(e));
                 break;
             case "2":
-                this.nextElementSibling.innerHTML = "Trifft nicht zu";
+                this.parentNode.parentNode.firstElementChild.innerText = "Trifft nicht zu";
                 break;
             case "3":
-                this.nextElementSibling.innerHTML = "Trifft eher nicht zu";
+                this.parentNode.parentNode.firstElementChild.innerText = "Trifft eher nicht zu";
                 break;
             case "4":
-                this.nextElementSibling.innerHTML = "Trifft zu";
+                this.parentNode.parentNode.firstElementChild.innerText = "Trifft zu";
                 break;
             case "5":
-                this.nextElementSibling.innerHTML = "Trifft sehr zu";
+                this.parentNode.parentNode.firstElementChild.innerText = "Trifft sehr zu";
                 break;
             default: console.log("gibts nicht");
         }

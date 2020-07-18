@@ -71,9 +71,8 @@ a:hover{
     outline: none;
     border-radius: 15px;
     height: 15px;
-    margin-top: 40px;
-    margin-right: 100px;
     width: 200px;
+    background: #cb3333
 }
 
 .slider::-webkit-slider-thumb {
@@ -81,12 +80,17 @@ a:hover{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #cb3333;
+    background: #f6f6f6;
     cursor: pointer;
 }
 
 .question{
     width: 500px;
+    margin: 15px;
+}
+
+.question > h3, h4 {
+    display: inline;
 }
 
 #nextPage{
@@ -103,6 +107,24 @@ a:hover{
     font-size: 20px;
 }
 
-#currentQuestionPage{
-    text-align: center
+.answer{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.answer .popUpSlider {
+    visibility: hidden;
+    color: #fff;
+    background-color: #333;
+    border-radius: 6px;
+    position: absolute;
+    padding: 10px;
+    bottom: 20px;
+    left: 0px;
+    z-index: 1;
+}
+
+.answer:hover .popUpSlider{
+    visibility: visible;
 }
