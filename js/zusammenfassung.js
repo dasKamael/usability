@@ -5,23 +5,29 @@ let lecture = document.getElementById("lecture").innerHTML = localStorage.getIte
 Array.from(slider).forEach(function(e) {
     
     e.oninput = function(){
-        let value = this.value;  
+        let value = this.value;
+        let resultNode = this.parentNode.parentNode.firstElementChild
         switch(value){
             case "1": 
-                this.parentNode.parentNode.firstElementChild.innerText = "Trifft überhaupt nicht zu";
+                resultNode.innerText = "Trifft überhaupt nicht zu";
+                resultNode.style.cssText = "color: #cb3333";
                 console.log(Array.from(slider).indexOf(e));
                 break;
             case "2":
-                this.parentNode.parentNode.firstElementChild.innerText = "Trifft nicht zu";
+                resultNode.innerText = "Trifft nicht zu";
+                resultNode.style.cssText = "color: #B24D26";
                 break;
             case "3":
-                this.parentNode.parentNode.firstElementChild.innerText = "Trifft eher nicht zu";
+                resultNode.innerText = "Trifft eher nicht zu";
+                resultNode.style.cssText = "color: darkorange";
                 break;
             case "4":
-                this.parentNode.parentNode.firstElementChild.innerText = "Trifft zu";
+                resultNode.innerText = "Trifft zu";
+                resultNode.style.cssText = "color: #7F800D";
                 break;
             case "5":
-                this.parentNode.parentNode.firstElementChild.innerText = "Trifft sehr zu";
+                resultNode.innerText = "Trifft sehr zu";
+                resultNode.style.cssText = "color: #669900";
                 break;
             default: console.log("gibts nicht");
         }

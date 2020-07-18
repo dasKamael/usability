@@ -57,6 +57,16 @@ a:hover{
     text-align: center;
 }
 
+#rightSideGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+}
+
+#rightSideGrid > div > h2 {
+    text-align: center;
+}
+
 .questionArea{
     height: 70vh;
     width: 50vw;
