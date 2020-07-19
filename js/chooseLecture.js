@@ -1,9 +1,9 @@
 var lectureList = [
-    'Usability Engineering',
-    'Algorithmen und Datenstrukturen',
-    'Datenbanken',
-    'Rechnernetz- werke und Tele- kommunikation',
-    'Objektorientierte Software- entwicklung',
+    ['Usability Engineering','Staab'],
+    ['Algorithmen und Datenstrukturen', 'Ulges'],
+    ['Datenbanken', 'Martin'],
+    ['Rechnernetz- werke und Tele- kommunikation', 'Geib'],
+    ['Objektorientierte Software- entwicklung', 'Panitz']
 ]
 
 var elements = document.getElementsByClassName('link');
@@ -12,7 +12,7 @@ if(localStorage.getItem('visited') != null)
     visited = localStorage.getItem('visited').split(',');
 
 for(i=0;i<lectureList.length;i++){
-    createChooseLecture(lectureList[i]);
+    createChooseLecture(lectureList[i][0]);
 }
 
 function createChooseLecture(lecture){

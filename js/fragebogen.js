@@ -11,23 +11,28 @@ Array.from(sliderResult).forEach(function(e){
 Array.from(slider).forEach(function(e) {
     
     e.oninput = function(){
-        let value = this.value;  
+        let value = this.value;
+        let resultNode = this.nextElementSibling;  
         switch(value){
             case "1": 
-                this.nextElementSibling.innerHTML = "Trifft überhaupt nicht zu";
-                console.log(Array.from(slider).indexOf(e));
+                resultNode.innerHTML = "Trifft überhaupt nicht zu";
+                resultNode.style.cssText = "color: #cb3333";
                 break;
             case "2":
-                this.nextElementSibling.innerHTML = "Trifft nicht zu";
+                resultNode.innerHTML = "Trifft nicht zu";
+                resultNode.style.cssText = "color: #B24D26";
                 break;
             case "3":
-                this.nextElementSibling.innerHTML = "Trifft eher nicht zu";
+                resultNode.innerHTML = "Trifft eher nicht zu";
+                resultNode.style.cssText = "color: darkorange";
                 break;
             case "4":
-                this.nextElementSibling.innerHTML = "Trifft zu";
+                resultNode.innerHTML = "Trifft zu";
+                resultNode.style.cssText = "color: #7F800D";
                 break;
             case "5":
                 this.nextElementSibling.innerHTML = "Trifft sehr zu";
+                resultNode.style.cssText = "color: #669900";
                 break;
             default: console.log("gibts nicht");
         }

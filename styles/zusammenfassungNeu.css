@@ -44,7 +44,7 @@ a:hover{
 }
 
 #leftSide{
-    justify-self: center;
+    justify-self: end;
     align-self: center;
 }
 

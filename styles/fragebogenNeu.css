@@ -16,6 +16,7 @@ a:hover{
 #all{
     height: 100vh;
     width: 100vw;
+    display: relative;
 }
 
 #header{
@@ -41,10 +42,11 @@ a:hover{
     grid-template-columns: 1fr 3fr;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 #leftSide{
-    justify-self: center;
+    justify-self: end;
     align-self: center;
 }
 
@@ -74,6 +76,7 @@ a:hover{
     margin-top: 40px;
     margin-right: 100px;
     width: 200px;
+    background: #cb3333;
 }
 
 .slider::-webkit-slider-thumb {
@@ -81,8 +84,12 @@ a:hover{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #cb3333;
+    background: #333;
     cursor: pointer;
+}
+
+.sliderResult{
+    font-weight: bolder;
 }
 
 .question{
@@ -105,4 +112,33 @@ a:hover{
 
 #currentQuestionPage{
     text-align: center
+}
+
+#infoBox{
+    position: absolute;
+    height: max-content;
+    width: 300px;
+    border: 2px dotted black;
+    right: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+#infoBox > p {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1500px){
+    #infoBox{
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+    #main{
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+    }
 }
