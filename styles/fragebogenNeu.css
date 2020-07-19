@@ -126,7 +126,7 @@ a:hover{
 
 #infoBox > p {
     text-align: justify;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 @media only screen and (max-width: 1500px){
