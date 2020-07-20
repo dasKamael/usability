@@ -6,6 +6,8 @@ var lectureList = [
     ['Objektorientierte Software- entwicklung', 'Panitz']
 ]
 
+// Set loggedInUser
+document.getElementById('loggedUser').innerHTML = localStorage.getItem('user');
 var elements = document.getElementsByClassName('link');
 var visited = [];
 if(localStorage.getItem('visited') != null)

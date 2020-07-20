@@ -3,6 +3,11 @@ let sliderResult = document.getElementsByClassName('sliderResult');
 let lecture = document.getElementById("lecture").innerHTML = localStorage.getItem('current');
 
 
+if(localStorage.questionAnswers == null){
+    localStorage.setItem('questionAnswers', '3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3');
+}
+
+
 Array.from(sliderResult).forEach(function(e){
     let questionPage = parseInt(document.getElementById('currentQuestionPage').innerText);
     console.log(typeof(questionPage));

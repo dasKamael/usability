@@ -1,34 +1,7 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 500;
-    font-family: Trebuchet MS, Helvetica, sans-serif;
-}
-
-a:hover{
-    cursor: pointer;
-}
-
-#header #logoutLink{
-   text-decoration: none;
-   color: white;
-   padding: 12px;
-}
-
 #main{
     height: 100vh;
     display: grid;
 }
-
-#header{
-    background-color: #cb3333;
-    height: 10%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px 0 10px;
-}
-
 
 #proflist{
     margin-top: 0%;
