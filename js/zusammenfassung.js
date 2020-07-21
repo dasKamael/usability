@@ -1,5 +1,16 @@
 let slider = document.getElementsByClassName('slider');
 let lecture = document.getElementById("lecture").innerHTML = localStorage.getItem('current');
+let send = document.getElementById('nextPageButton');
+
+send.addEventListener('click', function(){
+    let done = [];
+    if(localStorage.getItem('done') != null)
+        done = localStorage.getItem('done').split(',');
+
+    done.push(localStorage.getItem('current'));
+    localStorage.setItem('done', done.toString());
+    window.open('../pages/chooseLecture.html', '_self');
+});
 
 
 Array.from(slider).forEach(function(e) {

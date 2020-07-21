@@ -1,6 +1,9 @@
 let slider = document.getElementsByClassName('slider');
 let sliderResult = document.getElementsByClassName('sliderResult');
-let lecture = document.getElementById("lecture").innerHTML = localStorage.getItem('current');
+let current = localStorage.getItem('current').split(',');
+
+let prof = document.getElementById("profName").innerHTML = current[1];
+let lecture = document.getElementById("lecture").innerHTML = current[0];
 
 
 if(localStorage.questionAnswers == null){

@@ -9,9 +9,9 @@ var lectureList = [
 // Set loggedInUser
 document.getElementById('loggedUser').innerHTML = localStorage.getItem('user');
 var elements = document.getElementsByClassName('link');
-var visited = [];
-if(localStorage.getItem('visited') != null)
-    visited = localStorage.getItem('visited').split(',');
+var done = [];
+if(localStorage.getItem('done') != null)
+    done = localStorage.getItem('done').split(',');
 
 for(i=0;i<lectureList.length;i++){
     createChooseLecture(lectureList[i][0]);
@@ -21,10 +21,9 @@ function createChooseLecture(lecture){
     let wrap = document.createElement('div');
         wrap.classList.add('profImage');
 
-        if(visited.length >=0 && visited.indexOf(lecture)>=0){
+        if(done.length >=0 && done.indexOf(lecture)>=0){
             wrap.classList.add('alreadyDone');
-        }
-        console.log(visited);       
+        }     
     
     let header = document.createElement('h1');
         header.classList.add('lecture');
@@ -58,13 +57,17 @@ function createChooseLecture(lecture){
 }
 
 for(let i=0;i<elements.length;i++){
+    let lecture = [];
     elements[i].addEventListener('click', function(e){
         let item = e.target.parentNode.parentNode.parentNode.childNodes[0].innerText;
-        if(visited.indexOf(item)<0){
-            visited.push(item);
-        }
-        localStorage.setItem('visited', visited.toString());
-        localStorage.setItem('current', item);
+        lecture.push(item);
+        
+        for(let j=0;j<lectureList.length;j++)
+            if(item == lectureList[j][0])
+                lecture.push(lectureList[j][1]);
+        
+
+        localStorage.setItem('current', lecture.toString());
         window.open('../pages/fragebogenNeu.html', '_self');
     }, false);
 }
