@@ -33,3 +33,8 @@ a:hover{
 #loggedUser{
     color: #f6f6f6;
 }
+
+#profName{
+    font-size: 24px;
+    font-weight: bold;
+}
