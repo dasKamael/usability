@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/13d7f25eba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../styles/overall.css">
     <link rel="stylesheet" type="text/css" href="../styles/zusammenfassungNeu.css">
     <title>Document</title>
@@ -22,9 +23,11 @@
                 <span>Prof. </span><span id="profName"></span>
                 <h3><i id="lecture"></i></h3>
                 <img id="info" src="../assets/profAlone.png" height="400">
+                
             </div>
             <div id="rightSide">
-                <h1 style="margin-bottom: 00px;">Zusammenfassung</h1>
+                <h1>Zusammenfassung</h1>
+                <p id="info"><cite>Hover über die Antworten um deine vorherigen Eingaben zu korrigieren</cite></p>
                 <div id="rightSideGrid">
 <!-- Erster Fragenabschnitt-->
                     <div id="sectionOne">
@@ -106,93 +109,16 @@
                             </div>
                         </div>
                     </div>
-<!-- Dritter Fragenabschnitt-->
-                    <div id="sectionThree">
-                        <h2>Aussprache</h2>
-                        <div class="question">
-                            <h3>Seine Aussprache ist verständlich?</h3>
-                            <div class="answer">
-                                <h4>Trifft eher nicht zu</h4>
-                                <span class="popUpSlider">
-                                    <input class="slider" type="range" min="1" max="5" value="3">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3>Seine Aussprache ist verständlich?</h3>
-                            <div class="answer">
-                                <h4>Trifft eher nicht zu</h4>
-                                <span class="popUpSlider">
-                                    <input class="slider" type="range" min="1" max="5" value="3">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3>Seine Aussprache ist verständlich?</h3>
-                            <div class="answer">
-                                <h4>Trifft eher nicht zu</h4>
-                                <span class="popUpSlider">
-                                    <input class="slider" type="range" min="1" max="5" value="3">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3>Seine Aussprache ist verständlich?</h3>
-                            <div class="answer">
-                                <h4>Trifft eher nicht zu</h4>
-                                <span class="popUpSlider">
-                                    <input class="slider" type="range" min="1" max="5" value="3">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-<!-- Vierter Fragenabschnitt-->
-                    <div id="sectionFour">
-                        <h2>Aussprache</h2>
-                        <div class="question">
-                            <h3>Seine Aussprache ist verständlich?</h3>
-                            <div class="answer">
-                                <h4>Trifft eher nicht zu</h4>
-                                <span class="popUpSlider">
-                                    <input class="slider" type="range" min="1" max="5" value="3">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3>Seine Aussprache ist verständlich?</h3>
-                            <div class="answer">
-                                <h4>Trifft eher nicht zu</h4>
-                                <span class="popUpSlider">
-                                    <input class="slider" type="range" min="1" max="5" value="3">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3>Seine Aussprache ist verständlich?</h3>
-                            <div class="answer">
-                                <h4>Trifft eher nicht zu</h4>
-                                <span class="popUpSlider">
-                                    <input class="slider" type="range" min="1" max="5" value="3">
-                                </span>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <h3>Seine Aussprache ist verständlich?</h3>
-                            <div class="answer">
-                                <h4>Trifft eher nicht zu</h4>
-                                <span class="popUpSlider">
-                                    <input class="slider" type="range" min="1" max="5" value="3">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             </div>  
         </div>
     </div>
+        <div id="lastPage">
+            <a href="chooseLecture.html"><button id="nextPageButton"><i class="far fa-arrow-alt-circle-left"></i>   Zurück</button></a>
+        </div>
         <div id="nextPage">
-            <button id="nextPageButton">Senden</button>
+            <button id="nextPageButton">Senden   <i class="far fa-arrow-alt-circle-right"></i></button>
         </div>
     </div>
 </body>

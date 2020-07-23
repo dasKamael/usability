@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/13d7f25eba.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="../styles/overall.css">
     <link rel="stylesheet" type="text/css" href="../styles/fragebogenNeu.css">
     <title>Document</title>
@@ -18,12 +19,6 @@
         </div>
 
         <div id="main">
-            <div id="infoBox">
-                <h2>Info</h2>
-                <p>Fragen bitte mit dem Slider beantworten. Änderungen sind am Ende noch möglich
-                   Bitte ehrlich anwtorten. 
-                </p>
-            </div>
             <div id="leftSide">
                 <h2 id="profName">Panitz</h2>
                 <h3><i id="lecture"></i></h3>
@@ -32,6 +27,7 @@
             <div id="rightSide">
                 <h3 id="currentQuestionPage">1</h3>
                 <h1>Auftreten</h1>
+                <p id="info"><cite>Bitte die Fragen mit dem Slider bewerten</cite></p>
                 <div class="questionArea">
                     <div class="question">
                         <h3 class="questionHeader">Ist seine Aussprache in Ordnung?</h3>
@@ -57,7 +53,10 @@
             </div>
         </div>
         <div id="nextPage">
-            <a href="fragebogenNeu2.html"><button id="nextPageButton">Weiter</button></a>
+            <a href="fragebogenNeu2.html"><button id="nextPageButton">Weiter   <i class="far fa-arrow-alt-circle-right"></i></button></a>
+        </div>
+        <div id="lastPage">
+            <a href="chooseLecture.html"><button id="nextPageButton"><i class="far fa-arrow-alt-circle-left"></i>   Zurück</button></a>
         </div>
     </div>
 </body>

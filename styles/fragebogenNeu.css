@@ -39,33 +39,44 @@ a:hover{
     height: 90%;
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     align-items: center;
     position: relative;
 }
 
 #leftSide{
-    justify-self: end;
+    justify-self: center;
     align-self: center;
+    transform: translate(150px);
 }
 
 #rightSide{
-    justify-self: center;
+    justify-self: start;
     align-self: center;
 }
 
 #rightSide > h1 {
+    justify-self: center;
     text-align: center;
 }
 
 .questionArea{
     height: 70vh;
-    width: 50vw;
+    margin-top: 50px;
     display: grid;
     grid-template-rows: repeat(1fr, 5);
     justify-content: space-around;
     align-items: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.question{
+    background-color: lightgrey;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .slider {
@@ -74,7 +85,7 @@ a:hover{
     border-radius: 15px;
     height: 15px;
     margin-top: 40px;
-    margin-right: 100px;
+    margin-right: 50px;
     width: 200px;
     background: #cb3333;
 }
@@ -102,6 +113,12 @@ a:hover{
     right: 50px;
 }
 
+#lastPage{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
 #nextPageButton{
     background-color: #cb3333;
     padding: 10px 20px 10px 20px;
@@ -109,9 +126,13 @@ a:hover{
     color: #F6F6F6;
     font-size: 20px;
 }
-
 #currentQuestionPage{
     text-align: center
+}
+
+#info{
+    text-align: center;
+    margin-top: 15px;
 }
 
 #infoBox{
@@ -119,7 +140,6 @@ a:hover{
     height: max-content;
     width: 300px;
     border: 2px dotted black;
-    right: 20px;
     text-align: center;
     padding: 10px;
 }
@@ -127,12 +147,6 @@ a:hover{
 #infoBox > p {
     text-align: justify;
     margin-top: 25px;
-}
-
-@media only screen and (max-width: 1500px){
-    #infoBox{
-        visibility: hidden;
-    }
 }
 
 

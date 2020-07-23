@@ -9,6 +9,10 @@ a:hover{
     cursor: pointer;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 
 #main{
     height: 100vh;
