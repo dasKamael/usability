@@ -1,6 +1,6 @@
 var slider = document.getElementsByClassName('slider');
 var lecture = document.getElementById("lecture").innerHTML = localStorage.getItem('current');
-var send = document.getElementById('nextPageButton');
+var send = document.getElementById('nextPage');
 var current = localStorage.getItem('current').split(',');
 
 var prof = document.getElementById("profName").innerHTML = current[1];
@@ -81,7 +81,8 @@ send.addEventListener('click', function(){
     if(localStorage.getItem('done') != null)
         done = localStorage.getItem('done').split(',');
 
-    done.push(localStorage.getItem('current'));
+    done.push(current[0]);
+    done.push(current[2])
     localStorage.setItem('done', done.toString());
     window.open('../pages/chooseLecture.html', '_self');
 });

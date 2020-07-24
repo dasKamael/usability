@@ -20,11 +20,7 @@ for(i=0;i<lectureList.length;i++){
 function createChooseLecture(lecture){
     let wrap = document.createElement('div');
         wrap.classList.add('profImage');
-
-        if(done.length >=0 && done.indexOf(lecture)>=0){
-            wrap.classList.add('alreadyDone');
-        }     
-    
+       
     let header = document.createElement('h1');
         header.classList.add('lecture');
         header.innerText = lecture;
@@ -47,6 +43,20 @@ function createChooseLecture(lecture){
     let lectureLink2 = document.createElement('a');
         //lectureLink2.setAttribute("href", "../pages/fragebogen.html");
 
+    if(done.length >=0 && done.indexOf(lecture)>=0){
+        wrap.style.border = '5px solid darkorange';
+        let newDone = [];
+        for(let i = 0; i<done.length;i++){
+            if(lecture == done[i] && 'Vorlesung' == done[i+1])
+                lecture1.style.color = "green";
+                if(lecture == done[i] && 'Übung' == done[i+1])
+                lecture2.style.color = "green";
+        }
+        
+        if(lecture1.style.color == "green" && lecture2.style.color == "green")
+            wrap.style.border = '5px solid green';
+    }  
+
     wrap.appendChild(header);
     wrap.appendChild(chooseLecture);
     lectureLink1.appendChild(lecture1);
@@ -60,12 +70,13 @@ for(let i=0;i<elements.length;i++){
     let lecture = [];
     elements[i].addEventListener('click', function(e){
         let item = e.target.parentNode.parentNode.parentNode.childNodes[0].innerText;
+        let part = e.target.innerText;
         lecture.push(item);
         
         for(let j=0;j<lectureList.length;j++)
             if(item == lectureList[j][0])
                 lecture.push(lectureList[j][1]);
-        
+        lecture.push(part);
 
         localStorage.setItem('current', lecture.toString());
         window.open('../pages/fragebogenNeu.html', '_self');
