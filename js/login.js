@@ -4,7 +4,7 @@ sendButton.addEventListener('click', function(){
     let username = document.getElementById('username').value;
 
     if(username == "prof"){
-        localStorage.setItem('user', user.value);
+        localStorage.setItem('user', username);
         window.open('pages/results.html',"_self","",true);
     } else {
         setLocalStorage(username);
