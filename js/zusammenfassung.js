@@ -13,6 +13,33 @@ var color3 = "color: darkorange";
 var color4 = "color: #7F800D";
 var color5 = "color: #669900";
 
+class User{
+
+    constructor(username, done, questionAnswers, firstTime = false){
+        this.username = username;
+        this.done = done;
+        this.questionAnswers = questionAnswers;
+        this.firstTime = firstTime;
+    }
+
+    setLocalStorage() {
+        localStorage.setItem('user', this.username);
+        localStorage.setItem('done', done.toString());
+        localStorage.setItem('questionAnswers', questionAnswers.toString());
+    }
+
+    getExistingUser(loggedUser){
+        if(localStorage.getItem(loggedUser) != null) {
+            return JSON.parse(localStorage.getItem(loggedUser));
+        }
+    }
+
+    createUser() {
+        localStorage.setItem(this.username.toString(), JSON.stringify(this));
+    }
+
+}
+
 Array.from(slider).forEach(function(e) {
     let resultNode = e.parentNode.parentNode.firstElementChild
     switch(questionsAnswered[Array.from(slider).indexOf(e)]){
@@ -80,10 +107,13 @@ send.addEventListener('click', function(){
     let done = [];
     if(localStorage.getItem('done') != null)
         done = localStorage.getItem('done').split(',');
-
+    
+    localStorage.setItem('questionAnswers', '3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3')
     done.push(current[0]);
     done.push(current[2])
     localStorage.setItem('done', done.toString());
+    let updatedUser = new User(localStorage.getItem('user'), done.toString(), '3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3', false);
+    localStorage.setItem(localStorage.getItem('user'), JSON.stringify(updatedUser));
     window.open('../pages/chooseLecture.html', '_self');
 });
 

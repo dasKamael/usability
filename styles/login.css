@@ -40,6 +40,10 @@ input{
     font-size: 24px;
 }
 
+input:focus{
+    outline: none;
+}
+
 #loginButton{
     color: white;
     background: #CB3333;
@@ -53,4 +57,12 @@ input{
 }
 #loginButton:hover{
     cursor: pointer;
+}
+
+#anmerkung{
+    text-align: center;
+    color: #CB3333;
+    font-size: 20px;
+    font-weight: bold;
+    visibility: hidden;
 }
