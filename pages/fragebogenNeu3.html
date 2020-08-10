@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/13d7f25eba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../styles/overall.css">
+    <link rel="stylesheet" type="text/css" href="../styles/fragebogenNeu.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="all">
+        <div id="header">
+            <img src="../assets/logo.png" height="100">
+            <div>
+                <span id="loggedUser"></span>
+                <a id="logoutLink" href="../index.html"><h2 id="logOut">Logout</h2></a>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="leftSide">
+                <h2 id="profName">Panitz</h2>
+                <h3><i id="lecture"></i></h3>
+                <img id="info" src="../assets/profAlone.png" height="400">
+            </div>
+            <div id="rightSide">
+                <h1>Kritik</h1>
+                <textarea rows="10" cols="100" placeholder="Vefassen Sie hier ihre Kritik..."
+                          style="padding: 10px"></textarea>
+            </div>
+
+        <div id="nextPage">
+            <a href="zusammenfassungNeu.html"><button id="nextPageButton">Zur Zusammenfassung (3/3)</button></a>
+        </div>
+        <div id="lastPage">
+            <a href="fragebogenNeu2.html"><button id="nextPageButton"><i class="far fa-arrow-alt-circle-left"></i> Zur�ck (2/3)</button></a>
+        </div>
+    </div>
+</body>
+<script src="../js/fragebogen.js"></script>
+</html>

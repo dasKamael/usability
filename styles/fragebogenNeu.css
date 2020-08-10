@@ -68,8 +68,8 @@ a:hover{
     grid-template-rows: repeat(1fr, 5);
     justify-content: space-around;
     align-items: center;
-/*    overflow: scroll;
-    overflow-x: hidden; */
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .question{
