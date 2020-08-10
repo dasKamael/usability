@@ -1,6 +1,7 @@
 var slider = document.getElementsByClassName('slider');
 var lecture = document.getElementById("lecture").innerHTML = localStorage.getItem('current');
 var send = document.getElementById('nextPage');
+document.getElementById('loggedUser').innerHTML = localStorage.getItem('user');
 var current = localStorage.getItem('current').split(',');
 
 var prof = document.getElementById("profName").innerHTML = current[1];
