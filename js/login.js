@@ -47,7 +47,7 @@ sendButton.addEventListener('click', function(){
         username.style.border = "2px solid red";
         username.nextElementSibling.style.border = '2px solid red';
         username.previousElementSibling.style.visibility = 'visible'
-    } else if(username.value == "prof"){
+    } else if(username.value == "panit001"){
         localStorage.setItem('user', username.value);
         window.open('pages/results.html',"_self","",true);
     } else {
