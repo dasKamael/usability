@@ -76,8 +76,10 @@
   background-color: #cb3333;
 }
 
-.container{
-
+#container{
+  width: 100%;
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 h1{
@@ -101,17 +103,17 @@ h1{
 }
 
 .one {
-  float:left;
-  width:50%;
+  float:right;
   overflow:hidden;
-  margin: 2em;
+  margin: auto;
+  width: 40%;
   }
 
 .two {
-  float: right;
-  width:40%;
+  float: left;
   overflow:hidden;
-  margin: 2em;
+  margin: auto;
+  width: 40%;
   }
 
   
