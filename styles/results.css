@@ -253,4 +253,13 @@ h1{
 
 } /* grid only */
 
+#dropdownResults{
+	width: 200;
+	height: 100;
+	font-size: 30px;
+	color: #f6f6f6;
+	background-color: #cb3333;
+	border: none;
+}
+
 
