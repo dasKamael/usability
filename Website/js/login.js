@@ -39,11 +39,12 @@ if(localStorage.getItem('rmaas001') == null) {
 }
 
 let sendButton = document.getElementById('loginButton');
+let password = document.getElementById('password');
 
 sendButton.addEventListener('click', function(){
     let username = document.getElementById('username');
     let re = new RegExp()
-    if(!(/[a-z]{5}[0-9]{3}/.test(username.value))){
+    if(password.value == '' || !(/[a-z]{5}[0-9]{3}/.test(username.value))){
         username.style.border = "2px solid red";
         username.nextElementSibling.style.border = '2px solid red';
         username.previousElementSibling.style.visibility = 'visible'

@@ -26,7 +26,7 @@ if(localStorage.questionAnswers == null){
 
 
 Array.from(sliderResult).forEach(function(e){
-    switch(questionsAnswered[Array.from(sliderResult).indexOf(e) + (parseInt(currentQuestionPage)-1)*4]){
+    switch(questionsAnswered[Array.from(sliderResult).indexOf(e) + (parseInt(currentQuestionPage)-1)*5]){
         case "1": 
             e.innerText = "Trifft überhaupt nicht zu";
             e.style.cssText = color1;
@@ -54,7 +54,7 @@ Array.from(sliderResult).forEach(function(e){
 
 Array.from(slider).forEach(function(e) {
 
-    switch(questionsAnswered[Array.from(slider).indexOf(e) + (parseInt(currentQuestionPage)-1)*4]){
+    switch(questionsAnswered[Array.from(slider).indexOf(e) + (parseInt(currentQuestionPage)-1)*5]){
         case "1": 
             e.value = 1;
             e.style.cssText = color1;
@@ -83,7 +83,7 @@ Array.from(slider).forEach(function(e) {
     e.oninput = function(){
         let value = this.value;
         let resultNode = this.nextElementSibling;
-        let pos = Array.from(slider).indexOf(this) + (parseInt(currentQuestionPage)-1)*4
+        let pos = Array.from(slider).indexOf(this) + (parseInt(currentQuestionPage)-1)*5
         switch(value){
             case "1": 
                 resultNode.innerHTML = "Trifft überhaupt nicht zu";
