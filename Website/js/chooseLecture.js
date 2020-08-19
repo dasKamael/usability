@@ -3,7 +3,7 @@ var lectureList = [
     ['Algorithmen und Datenstrukturen', 'Ulges'],
     ['Datenbanken', 'Martin'],
     ['Rechnernetz- werke und Tele- kommunikation', 'Geib'],
-    ['Objektorientierte Software- entwicklung', 'Panitz']
+    ['Objektorientierte Software- entwicklung', 'Panitz'],
 ]
 
 // Set loggedInUser

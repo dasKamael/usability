@@ -115,4 +115,3 @@ Array.from(slider).forEach(function(e) {
         localStorage.setItem('questionAnswers', questionsAnswered.toString());
     }
 });
-

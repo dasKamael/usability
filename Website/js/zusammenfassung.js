@@ -115,6 +115,6 @@ send.addEventListener('click', function(){
     localStorage.setItem('done', done.toString());
     let updatedUser = new User(localStorage.getItem('user'), done.toString(), '3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3', false);
     localStorage.setItem(localStorage.getItem('user'), JSON.stringify(updatedUser));
-    window.open('../pages/chooseLecture.html', '_self');
+    window.open('../pages/confirmation.html', '_self');
 });
 
